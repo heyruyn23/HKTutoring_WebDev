@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title></title>
+
+        <style>
+            /*명시도: important 인라인요소 아아디 클라스 요소*/
+            /*왼쪽 숫자가 더 많을수록 명시도가 높다*/
+            h1 {
+                color: red; /* 명시도: 0 0 0 0 1*/
+            }
+            .class {
+                color: green; /* 명시도: 0 0 0 1 0*/
+            }
+            #first {
+                color: blue; /* 명시도: 0 0 1 0 0*/
+            }#thisrd {
+                color: gray; /* 명시도: 0 0 1 0 0*/
+            }
+            #third>a {
+                color: pink; /* 명시도: 0 1 1 0 0*/
+            }
+            a{
+                color: aqua; /* 명시도: 0 1 0 0 0*/
+            }
+            #box a{
+                color: purple;
+            }
+
+        </style>
+    </head>
+    <body id="box">
+        <h2>명시도</h2>
+        <a href="./css.html">뒤로가기</a>
+        <h1 class="class" id="first">Hi</h1>
+        <h1 class="class" id="second">Hi</h1>
+        <h1 class="class" id="third"><a href="#">Hi</a></h1>
+    </body>
+</html>
