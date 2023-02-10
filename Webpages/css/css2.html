@@ -1,0 +1,39 @@
+<html> 
+    <head>
+        <title></title>
+    </head>
+        <style>
+            /*명시도: important 인라인요소 아이디 클라스 요소*/
+            /*왼쪽숫자가 더 많을수록 명시도가 높다*/ /*IMPORTANT*/
+            h1{
+                color:red; /*명시도: 0 0 0 0 1*/
+            }
+
+            .class{
+                color:green; /*명시도: 0 0 0 1 0*/
+            }
+            #first{
+                color:blue; /*명시도: 0 0 1 0 0*/
+            }
+            #third{
+                color:pink; /*명시도: 0 0 1 0 0*/
+            }
+            #third>a{
+                color:yellow; /*명시도: 0 1 1 0 0*/
+            }
+            a{
+                color:skyblue; /*명시도: 0 1 0 0 */
+            }
+
+            #box a{
+                color:purple; /*명시도: 0 1 1 0 0*/
+            }
+        </style> 
+    <body id="box">
+        <h2>명시도</h2>
+        <a href="./css.html">뒤로가기</a>
+        <h1 class="class" id="first">hi</h1>
+        <h1 class="class" id="second">hi</h1>
+        <h1 class="class" id="third"><a href="#">hi</a></h1>
+    </body>
+</html>
