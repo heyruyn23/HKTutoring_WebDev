@@ -1,0 +1,327 @@
+<html>
+    <head>
+        <title>Website - Table</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                clear: both;
+            }
+
+            td,th{
+                padding: 10px 20px;
+                border: 1px solid #dddddd;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+            .body>ul>li{
+                float:left;
+                list-style: none;
+                background-color: darkcyan;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: 900;
+            }
+
+            .body>ul>li:hover{
+                color: white;
+            }
+
+            .active{
+                background-color: gold !important;
+            }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="header">
+                <ul>
+                    <li id="home">
+                        Home
+                    </li>
+                    <li id="table">
+                        Table
+                    </li>
+                    <li id="article">
+                        Article
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="body">
+                
+                <ul>
+                    <li id="celebs">
+                        연예인
+                    </li>
+                    <li id="characters">
+                        캐릭터
+                    </li>
+                    <li id="puppies">
+                        강아지
+                    </li>
+                </ul>
+
+                <table id="celebsTable">
+                    <thead>
+                        <tr>
+                            <th>랭킹</th>
+                            <th>연예인</th>
+                            <th>사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table id="charactersTable">
+                    <thead>
+                        <tr>
+                            <th>랭킹</th>
+                            <th>캐릭터</th>
+                            <th>사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table id="puppiesTable">
+                    <thead>
+                        <tr>
+                            <th>랭킹</th>
+                            <th>강아지</th>
+                            <th>사진</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+    </body>
+    <script>
+        $('#home').click(function(){
+            window.location = "website.html";
+        });
+        $('#table').click(function(){
+            window.location = "website_table.html";
+        });
+        $('#article').click(function(){
+            window.location = "website_article.html";
+        });
+
+        $('#celebs').addClass("active");
+        $('#charactersTable').hide();
+        $('#puppiesTable').hide();
+
+
+        $('#celebs').click(function(){
+            $('#celebsTable').show();
+            $('#charactersTable').hide();
+            $('#puppiesTable').hide();
+
+
+            $('#celebs').addClass("active");
+            $('#characters').removeClass("active");
+            $('#puppies').removeClass("active");
+        })
+        
+        $('#characters').click(function(){
+            $('#celebsTable').hide();
+            $('#charactersTable').show();
+            $('#puppiesTable').hide();
+
+            
+            $('#celebs').removeClass("active");
+            $('#characters').addClass("active");
+            $('#puppies').removeClass("active");
+        })
+        
+        $('#puppies').click(function(){
+            $('#celebsTable').hide();
+            $('#charactersTable').hide();
+            $('#puppiesTable').show();
+            
+
+            $('#celebs').removeClass("active");
+            $('#characters').removeClass("active");
+            $('#puppies').addClass("active");
+        })
+    </script>
+</html>
