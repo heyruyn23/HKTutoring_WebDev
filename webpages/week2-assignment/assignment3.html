@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            assignment3
+        </title>
+        <style>
+            *{ /*별은 전체 적용*/
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                text-align: center;
+            }
+            .wrap>div{
+                float:left;
+                height: 600px;
+                line-height: 600px;
+            }
+            .header{
+                background-color: wheat;
+                height: 60px;
+            }
+            .left-panel{
+                width: 20%;
+                background-color: lemonchiffon;
+            }
+            .content{
+                width: 60%;
+                background-color: pink;
+            }
+            .right-panel{
+                width: 20%;
+                background-color: aliceblue;
+            }
+            .wrap{
+                background-color: aquamarine;
+            }
+            .footer{
+                clear: both; /*float:left가 더이상 적용하지 않게하기 위해서 쓴다*/
+                background-color: gr;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="wrap">
+            <div class="left-panel">left panel</div>
+            <div class="content">content</div>
+            <div class="right-panel">right panel</div>
+        </div>
+        <div class="footer">footer</div>
+    </body>
+</html>
