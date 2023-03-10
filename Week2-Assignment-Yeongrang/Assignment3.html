@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+         *{
+                margin:0;
+                padding :0;
+         }
+        .header{
+            list-style: none;
+            overflow: hidden;
+            background-color:floralwhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+        .leftpanel{
+            width: 20%;
+            background-color:aqua;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        .rightpanel{
+            width: 20%;
+            background-color: yellow;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+        }
+        .content{
+            width: 60%;
+            background-color:skyblue;
+            height: 600px;
+            display: flex;
+            justify-content: center; /* 이거 대신 line-height 쓰기*/
+            align-items: center;
+        }
+        .footer{
+            list-style: none;
+            overflow: hidden;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="header">header</li>
+            <div class="leftpanel">leftpanel</div>
+            <div class="rightpanel">rightpanel</div>
+            <div class="content">content</div>
+            <li class="footer">footer</li>
+        </ul>
+    </body>
+</html>

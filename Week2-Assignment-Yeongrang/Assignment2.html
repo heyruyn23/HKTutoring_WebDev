@@ -1,0 +1,68 @@
+<html>
+    <head></head>
+    <style>
+        .class{
+            color: red; /* */
+        }
+
+
+        .class:nth-child(2){
+            color: blue;
+        }
+
+
+        html>#body>h1:nth-child(3){
+            background-color: pink;
+        }
+
+
+        #body>h1:nth-child(3){
+            background-color: yellow;
+        }
+
+
+        body>h1>a{
+            background-color: yellow;
+        }
+
+
+        .class2{
+            background-color: green;
+        }
+
+
+        #body>.class2{
+            background-color: skyblue;
+        }
+
+
+        a{
+            text-decoration: none;
+        }
+
+
+        #body>.class3{
+            background-color: aquamarine;
+        }
+
+
+        h1:nth-child(3){
+            background-color: orange;
+        }
+
+
+        h1:nth-child(3){
+            background-color: orangered !important;
+        }
+
+
+    </style>
+    <body id="body">
+        <h1 class="class">안녕</h1>
+        <h1 class="class">안녕</h1>
+        <h1 class="class2">안녕</h1>
+        <h1 class="class2">안녕</h1>
+        <h1 class="class3">안녕 <a href="">여러분</a></h1>
+        <h1 class="class3">안녕 <a href="">흰둥이</a></h1>
+    </body>
+</html>
